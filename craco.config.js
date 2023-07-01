@@ -7,6 +7,7 @@ module.exports = {
       plugin: CracoEnvPlugin,
       options: {
         variables: {},
+        envDir: "./",
       },
     },
   ],

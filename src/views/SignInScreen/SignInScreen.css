@@ -45,3 +45,8 @@
 .signinScreen__grey {
   color: grey;
 }
+
+.signinScreen__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
