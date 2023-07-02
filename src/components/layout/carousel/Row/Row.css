@@ -47,7 +47,7 @@
 }
 
 .row__posterLarge:hover {
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
   transform-origin: top left;
   transform: scale(1.45) !important;
   opacity: 1;
@@ -55,6 +55,6 @@
 }
 
 :not(.row__posterLarge:hover) .row__posterLarge:hover ~ .row__posterLarge {
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
   transform: translateX(45%);
 }
