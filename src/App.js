@@ -25,7 +25,7 @@ function App() {
         );
       } else {
         // Log Out
-        dispatch(logout);
+        dispatch(logout());
       }
 
       return unsubscribe;
@@ -39,13 +39,16 @@ function App() {
           <Route
             exact
             path="/"
-            element={!user ? <Navigate to="/auth/login" /> : <HomePage />}
+            element={!user ? <Navigate to="/login" /> : <HomePage />}
           />
           <Route
-            path="/auth/login"
+            path="/login"
             element={!user ? <LoginPage /> : <Navigate to="/" />}
           />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route
+            path="/profile"
+            element={!user ? <Navigate to="/login" /> : <ProfilePage />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
