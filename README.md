@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Neilio3264/FilmFlix">
+  <a href="https://github.com/Neilio3264/netflix">
     <img src="public/logo512.png" alt="Logo" width="128" height="128">
   </a>
 
